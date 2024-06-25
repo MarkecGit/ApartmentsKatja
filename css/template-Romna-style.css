@@ -1,0 +1,432 @@
+/*
+ROMNA Template
+http://www.templatemo.com/free-website-templates/
+*/
+
+body {
+	background: #f8f8f8;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	position: relative;
+}
+html, body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	vertical-align: middle;
+    scroll-behavior: smooth;
+}
+.padding5 {
+	padding:5px;
+}
+
+@font-face {
+	font-family: 'Roboto Bold';
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto Bold";
+	font-weight: bold;
+}
+p {
+	line-height: 28px;
+}
+hr {
+	border-color: #e0e0e0;
+	margin: 0 auto 20px auto;
+	width: 100px !important;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 28px;
+}
+
+.title {
+}
+.title h2 {
+	color: #202020;
+	padding-bottom: 30px;
+}
+.title h3 {
+	padding:0px;
+	margin:0px;
+}
+.title p {
+	text-align:justify;
+}
+
+/* preloader section */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: none repeat scroll 0 0 #fff;
+	background: none repeat scroll 0 0 #f9f9f9;
+}
+.sk-spinner-rotating-plane.sk-spinner {
+	width: 40px;
+	height: 40px;
+	background-color: #eb5424;
+	border-radius: 50%;
+	-webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+	animation: sk-rotatePlane 1.2s infinite ease-in-out;
+}
+@keyframes sk-rotatePlane {
+0% {
+-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+}
+50% {
+-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+}
+100% {
+-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+}
+}
+/* home section */
+#home {
+	background: url('../images/Balcony.webp');
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	color: #ffffff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+	background-size: cover;
+}
+#home h2 {
+	letter-spacing: 2px;
+}
+.slider-2-text {
+	padding: 20px;
+	background: #1d1d1d; /* browsers that don't support rgba */
+    background: rgba(80, 183, 255, 0.4);
+	margin:0px;
+    color: #fff;
+}
+#home .btn {
+	background: rgba(80, 183, 255, 0.4);
+	border-radius: 4px;
+	border: none;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 10px 60px;
+	margin-top: 60px;
+}
+#home .btn:hover {
+	background: #fff;
+	color: #50b7ff;
+	transition: all 0.4s ease-in-out;
+}
+/* navigation section */
+.navbar-default {
+	background: #50b7ff;
+	border: none;
+	box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.04);
+	margin: 0 !important;
+}
+.navbar-default .navbar-brand {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+	line-height: 40px !important;
+}
+.navbar-default .navbar-nav li a {
+	color: #606060;
+	font-weight: bold;
+	padding-right: 20px;
+	padding-left: 20px;
+	line-height: 40px;
+}
+.navbar-default .navbar-nav li a:hover {
+	color: #50b7ff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #606060;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #50b7ff;
+	background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+	border: none;
+	padding-top: 12px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background: #606060;
+	border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+/* intro section */
+#osnovno {
+	background-color: #ffffff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#osnovno h4 {
+	padding-bottom: 16px;
+}
+
+#brziPregled
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/* work section */
+#apartments {
+	background-color: #ffffff;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+#apartments .title {
+	padding: 100px 60px 60px 60px;
+}
+#apartments .bg-black {
+	background-color: #303030;
+	color: #ffffff;
+}
+#apartments .bg-red {
+	background-color: #FFF;
+	color: #666;
+}
+#apartments h3 {
+	padding-bottom: 20px;
+	padding-top:20px;
+}
+
+#Galerija {
+	background-color: #ffffff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* team section */
+#prices {
+	background: #f8f8f8;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#prices p span {
+	color: #50b7ff;
+}
+#prices h2 {
+	padding:20x;
+}
+#prices h3 {
+	font-size: 20px;
+	line-height: 10px;
+}
+#prices h4 {
+	color: #202020;
+	line-height: 10px;
+	font-weight: bold;
+}
+
+/* google map section */
+#map {
+	border: none;
+	width: 100%;
+	height: 400px;
+}
+/* contact section */
+section#contact {
+	background: rgba(80, 183, 255, 0.4);
+	/*color: #ffffff; */
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+section#contact h2 {
+	color: #ffffff;
+}
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 15px;
+}
+section#contact .form-group input.form-control {
+  height: auto;
+}
+section#contact .form-group textarea.form-control {
+  height: 210px;
+}
+section#contact .form-control:focus {
+  border-color: #50b7ff;
+  box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #c6c6c6;
+}
+section#contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #DDD;
+}
+section#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #DDD;
+}
+section#contact :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #DDD;
+}
+section#contact .text-danger {
+  color: #e74c3c;
+}
+section#contact .btn {
+  background-color:#50b7ff;
+  margin-bottom:30px;
+}
+section#contact .btn:hover {
+  background-color:#4092cc;
+  color:#FFF;
+}
+.adresa {
+  background-color:#FFF;
+  height:300px;
+}
+/* footer section */
+footer {
+	background: #202020;
+	color: #ffffff;
+	border-bottom: 10px solid #ffffff;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.footer-box h4{
+	text-align:left;
+	font-size:18px;
+}
+.footer-box-text p{
+	text-align:left;
+    font-size:12px;	
+}
+footer p a{
+	color:#50b7ff;	
+}
+footer p a:hover {
+    color:#4092cc;
+}
+footer li{
+	text-align:left;
+    padding:5px;	
+}
+footer li a{
+    color:#EEE;	
+	text-align:left;
+	font-size:13px;	
+}
+footer li a:hover{
+    color:#50b7ff;
+    text-decoration:none;	
+}
+.sub-footer {
+    background-color: #FFF;
+	border-top: 1px solid #ddd;
+	padding: 5px 0 5px;
+}
+.sub-footer a{
+	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; 
+	color: #888;
+}
+.sub-footer a:hover{
+	color: #50b7ff;
+}
+.sub-footer  p {
+	font-size: 13px;
+}
+@media screen and (max-width:980px) {
+.navbar-default .navbar-nav li a {
+	padding-right: 14px;
+	padding-left: 14px;
+	font-size: 13px;
+}
+#osnovno h2 {
+	font-size: 32px;
+}
+#apartments .title {
+	padding: 80px 20px 20px 20px;
+}
+.photogallery-thumb .photogallery-overlay {
+	padding-top: 24px;
+}
+}
+@media (max-width:767px) {
+.navbar-brand {
+	padding-top: 6px;
+}
+}
+@media (max-width:400px) {
+#home h1 {
+	font-size: 22px;
+}
+#home h2 {
+	font-size: 15px;
+}
+#osnovno h2 {
+	font-size: 25px;
+}
+.photogallery-thumb .photogallery-overlay {
+	padding-top: 60px;
+}
+#galleria { 
+    width: 100%; 
+	height: 300px; }
+}
+.tblCijene {
+	border: 2px solid black;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(80, 183, 255, 0.4);
+}
