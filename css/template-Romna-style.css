@@ -430,3 +430,6 @@ footer li a:hover{
 .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: rgba(80, 183, 255, 0.4);
 }
+.table-row-disabled{
+	background-color: rgba(60, 61, 61, 0.4) !important;
+}
